@@ -41,7 +41,7 @@ dessertDropdown.addEventListener('change', () => {
 favoriteButton.addEventListener('click', () => {
     const favoritePhrase = favoriteInput.value;
     favoriteArrs.push(favoritePhrase);
-    console.log(favoriteArrs);
+
     favoriteInput.value = '';
     displayFavoriteResults();
 });

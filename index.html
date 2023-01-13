@@ -29,46 +29,6 @@
         </header>
 
         <main>
-            <div class="dropdownLocation">
-                <label>
-                    Main Dish
-                    <br />
-                    <select id="main-dropdown">
-                        <option value="pasta">pasta</option>
-                        <option value="ratatoullie">ratatoullie</option>
-                        <option value="shepards">shepards pie</option>
-                    </select>
-                </label>
-                <label>
-                    <br />
-                    Side Dish
-                    <br />
-                    <select id="side-dropdown">
-                        <option value="bread">bread</option>
-                        <option value="salad">salad</option>
-                        <option value="soup">soup</option>
-                    </select>
-                </label>
-                <label>
-                    <br />
-                    Dessert
-                    <br />
-                    <select id="dessert-dropdown">
-                        <option value="chocolate">chocolate cake</option>
-                        <option value="sorbet">lemon sorbet</option>
-                        <option value="trifle">trifle</option>
-                    </select>
-                </label>
-                <section>
-                    Tell us your favorite meals
-                    <input id="favorite-input" />
-                    <button id="favorite-button">Submit</button>
-                </section>
-            </div>
-            <section class="results" id="stats">
-                <p id="numOfChoices"></p>
-                <div id="favoriteResults"></div>
-            </section>
             <div class="display">
                 <div id="ResultPlacement" class="resultDisplay">
                     <div class="main Result" id="mainResult"></div>
@@ -76,6 +36,44 @@
                     <div class="dessert Result" id="dessertResult"></div>
                 </div>
             </div>
+            <div class="dropdownLocation">
+                <label>
+                    Main Dish
+
+                    <select id="main-dropdown">
+                        <option value="pasta">pasta</option>
+                        <option value="ratatoullie">ratatoullie</option>
+                        <option value="shepards">shepards pie</option>
+                    </select>
+                </label>
+                <label>
+                    Side Dish
+
+                    <select id="side-dropdown">
+                        <option value="bread">bread</option>
+                        <option value="salad">salad</option>
+                        <option value="soup">soup</option>
+                    </select>
+                </label>
+                <label>
+                    Dessert
+
+                    <select id="dessert-dropdown">
+                        <option value="chocolate">chocolate cake</option>
+                        <option value="sorbet">lemon sorbet</option>
+                        <option value="trifle">trifle</option>
+                    </select>
+                </label>
+            </div>
+            <section class="inputSection">
+                Tell us your favorite meals
+                <input id="favorite-input" />
+                <button id="favorite-button">Submit</button>
+            </section>
+            <section class="results" id="stats">
+                <p id="numOfChoices"></p>
+                <div id="favoriteResults"></div>
+            </section>
         </main>
     </body>
 </html>

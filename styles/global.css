@@ -60,5 +60,11 @@ main {
     margin: 10px;
 }
 .results {
-    font-size: 25px;
+    font-size: 20px;
+}
+.dropdownLocation {
+    display: flex;
+}
+.inputSection {
+    margin-top: 5px;
 }
