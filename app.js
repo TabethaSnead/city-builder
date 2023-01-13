@@ -21,31 +21,35 @@ let favoriteArrs = [];
 
 /* Events */
 mainDropdown.addEventListener('change', () => {
+    mainResult.style.backgroundImage = `url(./assets/${mainDropdown.value}-main.png)`;
     mainCounter++;
+    console.log(mainDropdown.value);
 });
 
 sideDropdown.addEventListener('change', () => {
+    sideResult.style.backgroundImage = `url(./assets/${sideDropdown.value}-side.png)`;
     sideCounter++;
 });
 
 dessertDropdown.addEventListener('change', () => {
+    dessertResult.style.backgroundImage = `url(./assets/${dessertDropdown.value}-dessert.png)`;
     dessertCounter++;
 });
 favoriteButton.addEventListener('click', () => {
     const favoritePhrase = favoriteInput.value;
     favoriteArrs.push(favoritePhrase);
+    console.log(favoriteArrs);
     favoriteInput.value = '';
-
     displayFavoriteResults();
 });
 /* Display Functions */
 function displayFavoriteResults() {
-    favoriteInput.textContent = '';
+    favoriteResults.textContent = '';
     for (let favorite of favoriteArrs) {
         const displayFavorite = document.createElement('div');
         displayFavorite.classList.add('favorite-phrases');
         displayFavorite.textContent = favorite;
-        favoriteInput.append(displayFavorite);
+        favoriteResults.append(displayFavorite);
     }
 }
 // (don't forget to call any display functions you want to run on page load!)
