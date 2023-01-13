@@ -33,3 +33,38 @@ header .logo {
 main {
     padding: 20px;
 }
+.resultDisplay {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    width: 800px;
+}
+.display {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.result {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.resultDisplay div {
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+.results {
+    font-size: 20px;
+}
+.dropdownLocation {
+    display: flex;
+}
+.inputSection {
+    margin-top: 5px;
+}

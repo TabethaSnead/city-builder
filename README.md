@@ -1,3 +1,5 @@
+![wireframe of city-builder]('./assets.wireframe.png')
+
 ## The Golden Rule:
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
@@ -25,3 +27,18 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+\*\*HTML
+-h1- for title~ to display instructions/title
+3-img- with 2 more img options~ to display what the user can choose
+3 dropdowns with 3 options realted to pictures~ to see what the user chose~ selectDropdownEl.value ~ add eventListener('change')
+3 -divs-span-- that display how many times each dropdown was clicked ~
+-input- for comment~ to find out what the user typed~ myArr.push(inputEl.value)
+-button- for submiting comment~ addEventListener('click')
+-div- empty for adding new element into for each comment~ createElement
+
+\*\*State
+side option
+main option
+dessert option
+list of comments

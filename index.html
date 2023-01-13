@@ -1,39 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Choose your meal</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>Choose your meal</h1>
+        </header>
 
-</head>
+        <main>
+            <div class="display">
+                <div id="ResultPlacement" class="resultDisplay">
+                    <div class="main Result" id="mainResult"></div>
+                    <div class="side Result" id="sideResult"></div>
+                    <div class="dessert Result" id="dessertResult"></div>
+                </div>
+            </div>
+            <div class="dropdownLocation">
+                <label>
+                    Main Dish
 
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
+                    <select id="main-dropdown">
+                        <option value="pasta">pasta</option>
+                        <option value="ratatoullie">ratatoullie</option>
+                        <option value="shepards">shepards pie</option>
+                    </select>
+                </label>
+                <label>
+                    Side Dish
 
-    <main>
+                    <select id="side-dropdown">
+                        <option value="bread">bread</option>
+                        <option value="salad">salad</option>
+                        <option value="soup">soup</option>
+                    </select>
+                </label>
+                <label>
+                    Dessert
 
-    </main>
-
-</body>
-
+                    <select id="dessert-dropdown">
+                        <option value="chocolate">chocolate cake</option>
+                        <option value="sorbet">lemon sorbet</option>
+                        <option value="trifle">trifle</option>
+                    </select>
+                </label>
+            </div>
+            <section class="inputSection">
+                Tell us your favorite meals
+                <input id="favorite-input" />
+                <button id="favorite-button">Submit</button>
+            </section>
+            <section class="results" id="stats">
+                <p id="numOfChoices"></p>
+                <div id="favoriteResults"></div>
+            </section>
+        </main>
+    </body>
 </html>
