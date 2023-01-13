@@ -23,17 +23,20 @@ let favoriteArrs = [];
 mainDropdown.addEventListener('change', () => {
     mainResult.style.backgroundImage = `url(./assets/${mainDropdown.value}-main.png)`;
     mainCounter++;
+    displayCounter();
     console.log(mainDropdown.value);
 });
 
 sideDropdown.addEventListener('change', () => {
     sideResult.style.backgroundImage = `url(./assets/${sideDropdown.value}-side.png)`;
     sideCounter++;
+    displayCounter();
 });
 
 dessertDropdown.addEventListener('change', () => {
     dessertResult.style.backgroundImage = `url(./assets/${dessertDropdown.value}-dessert.png)`;
     dessertCounter++;
+    displayCounter();
 });
 favoriteButton.addEventListener('click', () => {
     const favoritePhrase = favoriteInput.value;
@@ -51,5 +54,9 @@ function displayFavoriteResults() {
         displayFavorite.textContent = favorite;
         favoriteResults.append(displayFavorite);
     }
+}
+function displayCounter() {
+    numOfChoices.textContent = `You have chosen a new main dish ${mainCounter} times. You have chosen a new side dish ${sideCounter}
+     times. Tou have chosen a new dessert ${dessertCounter} times.`;
 }
 // (don't forget to call any display functions you want to run on page load!)

@@ -37,7 +37,7 @@ main {
     display: flex;
     justify-content: space-around;
     height: 400px;
-    width: 500px;
+    width: 800px;
 }
 .display {
     width: 100%;
@@ -55,6 +55,10 @@ main {
 }
 .resultDisplay div {
     background-size: cover;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+.results {
+    font-size: 25px;
 }
